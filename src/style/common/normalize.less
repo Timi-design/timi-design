@@ -1,16 +1,20 @@
-/* Document
-   ========================================================================== */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
 
+/* Document
+   ========================================================================== */
+
 html {
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
 }
 
 /* Sections
@@ -86,7 +90,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */ /* stylelint-disable-line */
+  font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -104,7 +108,17 @@ a {
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
@@ -140,7 +154,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */ /* stylelint-disable-line */
+  font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -303,11 +317,13 @@ button:-moz-focusring,
 }
 
 /**
- * Correct the padding in Firefox.
+ * Change the border, margin, and padding in all browsers (opinionated).
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
@@ -342,6 +358,7 @@ progress {
 
 textarea {
   overflow: auto;
+  resize: vertical;
 }
 
 /**

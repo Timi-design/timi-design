@@ -1,6 +1,2 @@
-import './button/style'
-import './icon/style'
-
-export { default as Button } from './button'
-
-export { default as Icon } from './icon'
+import Button from './components/button'
+import Icon from './components/icon'

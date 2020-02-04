@@ -1,7 +1,9 @@
-/* stylelint-disable declaration-bang-space-before */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 .tinyColorMixin() {
-@functions: ~`(function() {
-
+  @functions: ~`(function() {
+// TinyColor v1.4.1
+// https://github.com/bgrins/TinyColor
+// 2016-07-07, Brian Grinstead, MIT License
 var trimLeft = /^\s+/,
     trimRight = /\s+$/,
     tinyCounter = 0,
@@ -560,6 +562,11 @@ tinycolor.random = function() {
     });
 };
 
+// Modification Functions
+// ----------------------
+// Thanks to less.js for some of the basics here
+// <https://github.com/cloudhead/less.js/blob/master/lib/less/functions.js>
+
 function desaturate(color, amount) {
     amount = (amount === 0) ? 0 : (amount || 10);
     var hsl = tinycolor(color).toHsl();
@@ -613,6 +620,11 @@ function spin(color, amount) {
     hsl.h = hue < 0 ? 360 + hue : hue;
     return tinycolor(hsl);
 }
+
+// Combination Functions
+// ---------------------
+// Thanks to jQuery xColor for some of the ideas behind these
+// <https://github.com/infusion/jQuery-xcolor/blob/master/jquery.xcolor.js>
 
 function complement(color) {
     var hsl = tinycolor(color).toHsl();
@@ -1166,4 +1178,8 @@ this.tinycolor = tinycolor;
 
 })()`;
 }
+
+// It is hacky way to make this function will be compiled preferentially by less
+// resolve error: `ReferenceError: colorPalette is not defined`
+// https://github.com/ant-design/ant-motion/issues/44
 .tinyColorMixin();

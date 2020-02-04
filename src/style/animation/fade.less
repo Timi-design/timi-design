@@ -1,11 +1,10 @@
 .fade-motion(@className, @keyframeName) {
-  .make-motion(@className, @keyframeName);
-  .@{className}-enter,
-  .@{className}-appear {
+  .make-motion(@className, @keyframeName, @animation-time-quick);
+  .@{className}-enter-active, .@{className}-appear {
     opacity: 0;
     animation-timing-function: linear;
   }
-  .@{className}-leave {
+  .@{className}-leave-active {
     animation-timing-function: linear;
   }
 }
