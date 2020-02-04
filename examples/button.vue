@@ -73,7 +73,7 @@
   </div>
 </template>
 <script>
-import { Button } from '../components/index'
+import { Button } from '../src/index'
 const ButtonGroup = Button.Group
 export default {
   data () {
