@@ -1,6 +1,7 @@
+// @ts-ignore
 import Vue from 'vue';
 
-export {Button, ButtonGroup} from './button';
+export {Button, ButtonGroup} from './button/button';
 
 interface idoGlobalOptions {
   size?: string;
