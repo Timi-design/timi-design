@@ -1,6 +1,6 @@
-/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+/* stylelint-disable */
 .bezierEasingMixin() {
-  @functions: ~`(function() {
+@functions: ~`(function() {
   var NEWTON_ITERATIONS = 4;
   var NEWTON_MIN_SLOPE = 0.001;
   var SUBDIVISION_PRECISION = 0.0000001;
@@ -104,7 +104,6 @@
   return '';
 })()`;
 }
-
 // It is hacky way to make this function will be compiled preferentially by less
 // resolve error: `ReferenceError: colorPalette is not defined`
 // https://github.com/ant-design/ant-motion/issues/44

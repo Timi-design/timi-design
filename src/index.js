@@ -25,7 +25,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-const IDOAPI = {
+const API = {
   version: process.env.VERSION, // eslint-disable-line no-undef
   locale: locale.use,
   i18n: locale.i18n,
@@ -33,10 +33,10 @@ const IDOAPI = {
   ...components
 };
 
-IDOAPI.lang = (code) => {
+API.lang = (code) => {
   const langObject = window['ido/locale'].default;
   if (code === langObject.i.locale) locale.use(langObject);
   else console.log(`The ${code} language pack is not loaded.`); // eslint-disable-line no-console
 };
 
-module.exports.default = module.exports = IDOAPI;   // eslint-disable-line no-undef
+module.exports.default = module.exports = API;   // eslint-disable-line no-undef
