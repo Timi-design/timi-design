@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const entry = require('../libs/locale');
+const entry = require('./libs/locale');
 
 process.env.NODE_ENV = 'production';
 
@@ -22,10 +22,10 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, '../../dist/locale'),
+    path: path.resolve(__dirname, '../dist/locale'),
     publicPath: '/dist/locale/',
     filename: '[name].js',
-    library: 'iadAbc/locale',
+    library: 'idoDesign/locale',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const {merge} = require('webpack-merge');
-const webpackBaseConfig = require('../webpack.base.config.js');
+const webpackBaseConfig = require('./config/config.js');
 
 process.env.NODE_ENV = 'production';
 
@@ -11,10 +11,10 @@ module.exports = merge(webpackBaseConfig, {
     main: './src/index.js'
   },
   output: {
-    path: path.resolve(__dirname, '../../dist'),
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
-    filename: 'iadAbc.js',
-    library: 'iadAbc',
+    filename: 'idoDesign.js',
+    library: 'idoDesign',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
