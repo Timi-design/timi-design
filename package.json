@@ -22,10 +22,10 @@
     "types"
   ],
   "scripts": {
-    "build:js": "webpack --config ido-tools/build/build-js.js",
-    "build:minjs": "webpack --config ido-tools/build/build-minjs.js",
-    "build:locale": "webpack --config  ido-tools/build/build-locale.js",
-    "build:style": "gulp --gulpfile ido-tools/build/build-style.js",
+    "build:js": "webpack --config ido-tools/build-js.js",
+    "build:minjs": "webpack --config ido-tools/build-minjs.js",
+    "build:locale": "webpack --config  ido-tools/build-locale.js",
+    "build:style": "gulp --gulpfile ido-tools/build-style.js",
     "build": "npm run build:js && npm run build:minjs && npm run build:locale && npm run build:style",
     "install": "node ido-tools/libs/echo.js || echo \"ignore\""
   },
