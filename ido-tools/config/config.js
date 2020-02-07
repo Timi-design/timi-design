@@ -42,6 +42,7 @@ module.exports = {
                 loader: 'less-loader',
                 options: {
                   sourceMap: true,
+                  webpackImporter: false,
                 },
               },
             ],
@@ -99,6 +100,7 @@ module.exports = {
             loader: 'less-loader',
             options: {
               sourceMap: true,
+              webpackImporter: false,
             },
           },
         ]
