@@ -17,7 +17,7 @@ function log(it) {
 }
 
 if (!ADBLOCK && !CI && !DISABLE_OPENCOLLECTIVE && !SILENT) {
-  log('\u001B[96m 感谢使用ido-abc组件库!' + emoji.get('pray') + '\u001B[0m\n',);
+  log('\u001B[96m 感谢使用ido-components组件库!' + emoji.get('pray') + '\u001B[0m\n',);
   log('\u001B[0m\u001B[96m 官方网站 ◕‿◕ : \u001B[0m');
   log('\u001B[96m>\u001B[94m http://ido-design.maxiaoqu.com/ \u001B[0m\n');
 }

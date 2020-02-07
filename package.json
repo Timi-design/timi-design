@@ -1,5 +1,5 @@
 {
-  "name": "ido-abc",
+  "name": "ido-components",
   "version": "1.0.0",
   "title": "idoAbc",
   "description": "A high quality UI components Library with Vue.js",
@@ -31,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ido-densign/ido-abc"
+    "url": "https://github.com/ido-densign/ido-components"
   },
   "author": "maxiaoqu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ido-densign/ido-abc/issues"
+    "url": "https://github.com/ido-densign/ido-components/issues"
   },
   "pre-commit": [
     "lint",
