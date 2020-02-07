@@ -8,7 +8,7 @@ const webpackBaseConfig = require('./config/config.js');
 process.env.NODE_ENV = 'production';
 
 module.exports = merge(webpackBaseConfig, {
-  mode : 'production',
+  mode: 'production',
   devtool: 'source-map',
   entry: {
     main: './src/index.js'
@@ -39,11 +39,15 @@ module.exports = merge(webpackBaseConfig, {
       sourceMap: true
     }),
     new CompressionPlugin({
+      test: /\.(js|css)$/,
       filename: '[path][base].gz',
       algorithm: 'gzip',
-      test: /\.(js|css)$/,
       threshold: 10240,
-      minRatio: 0.8
+      minRatio: 0.8,
+      compressionOptions: {
+        level: 11
+      },
+      deleteOriginalAssets: true
     })
   ]
 });

@@ -6,8 +6,7 @@ const webpack = require('webpack');
 const pkg = require('../../package.json');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
-
-function resolve(dir) {
+function resolve (dir) {
   return path.join(__dirname, '..', dir);
 }
 
@@ -43,9 +42,6 @@ module.exports = {
                 loader: 'less-loader',
                 options: {
                   sourceMap: true,
-                  lessOptions: {
-                    strictMath: true,
-                  }
                 },
               },
             ],
@@ -103,9 +99,6 @@ module.exports = {
             loader: 'less-loader',
             options: {
               sourceMap: true,
-              lessOptions: {
-                strictMath: true,
-              }
             },
           },
         ]
