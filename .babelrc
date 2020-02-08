@@ -12,7 +12,7 @@
             "Explorer >= 11",
             "ie >= 11",
             "Edge >= 12",
-            "iOS >= 8",
+            "iOS >= 10",
             "Android >= 6"
           ]
         }
