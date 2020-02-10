@@ -8,11 +8,11 @@ const autoprefixer = require('gulp-autoprefixer');
 
 // 编译less
 function compile() {
-  return src('../src/styles/index.less')
+  return src('../utils/styles/index.less')
     .pipe(less())
     .pipe(cleanCSS())
     .pipe(autoprefixer({
-      browsers: ['last 2 versions', 'ie > 8'],
+      browsers: ['last 2 versions', 'ie > 9'],
       cascade: false
     }))
     .pipe(rename({

@@ -1,4 +1,4 @@
-import Icon from './components/icon'
+import Icon from './icon'
 
 const idoComponents = {
   Icon
