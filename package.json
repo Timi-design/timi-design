@@ -20,7 +20,7 @@
     "dist",
     "src",
     "types",
-    "scripts"
+    "utils"
   ],
   "scripts": {
     "build:js": "webpack --config ido-tools/build-js.js",
@@ -28,7 +28,7 @@
     "build:locale": "webpack --config  ido-tools/build-locale.js",
     "build:style": "gulp build --gulpfile ido-tools/build-style.js",
     "build": "npm run build:js && npm run build:minjs && npm run build:locale && npm run build:style",
-    "postinstall": "node scripts/postinstall || echo \"ignore\""
+    "postinstall": "node utils/echo/postinstall || echo \"ignore\""
   },
   "repository": {
     "type": "git",
