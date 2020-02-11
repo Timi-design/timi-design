@@ -5,11 +5,11 @@ const isServer = Vue.prototype.$isServer;
 
 export default function (lang) {
     if (!isServer) {
-        if (typeof window.idoDesign !== 'undefined') {
-            if (!('langs' in idoDesign)) {
-                idoDesign.langs = {};
+        if (typeof window.idodesign !== 'undefined') {
+            if (!('langs' in idodesign)) {
+                idodesign.langs = {};
             }
-            idoDesign.langs[lang.i.locale] = lang;
+            idodesign.langs[lang.i.locale] = lang;
         }
     }
 };

@@ -15,8 +15,8 @@ module.exports = merge(webpackBaseConfig, {
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
-    filename: 'idoDesign.min.js',
-    library: 'idoDesign',
+    filename: 'idodesign.min.js',
+    library: 'idodesign',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

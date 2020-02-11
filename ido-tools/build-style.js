@@ -16,14 +16,14 @@ function compile() {
       cascade: false
     }))
     .pipe(rename({
-      basename: 'idoDesign'
+      basename: 'idodesign'
     }))
     .pipe(dest('../dist/styles'));
 }
 
 // 拷贝字体文件
 function copyfont() {
-  return src('../src/styles/common/iconfont/fonts/*.*')
+  return src('../utils/styles/common/iconfont/fonts/*.*')
     .pipe(dest('../dist/styles/fonts'));
 }
 

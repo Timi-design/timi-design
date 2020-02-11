@@ -1,7 +1,7 @@
 import Icon from './icon'
 import locale from '../utils/locale/index';
 
-const idoDesign = {
+const components = {
   Icon
 };
 
@@ -10,8 +10,8 @@ const install = function (Vue, opts = {}) {
   locale.use(opts.locale);
   locale.i18n(opts.i18n);
 
-  Object.keys(idoDesign).forEach(key => {
-    Vue.component(key, idoDesign[key]);
+  Object.keys(components).forEach(key => {
+    Vue.component(key, components[key]);
   });
 
   Vue.prototype.$IDO = {
@@ -31,11 +31,11 @@ const API = {
   locale: locale.use,
   i18n: locale.i18n,
   install,
-  ...idoDesign
+  ...components
 };
 
 API.lang = (code) => {
-  const langObject = window['idoDesign/locale'].default;
+  const langObject = window['idodesign/locale'].default;
   if (code === langObject.i.locale) locale.use(langObject);
   else console.log(`The ${code} language pack is not loaded.`); // eslint-disable-line no-console
 };
