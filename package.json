@@ -1,11 +1,11 @@
 {
   "name": "ido-design",
   "version": "1.0.1",
-  "title": "idoDesign",
+  "title": "idodesign",
   "description": "A high quality UI components Library with Vue.js",
   "homepage": "http://www.maxiaoqu.com",
   "keywords": [
-    "idoDesign",
+    "idodesign",
     "maxiaoqu",
     "vue",
     "vue.js",
@@ -13,7 +13,7 @@
     "components",
     "ui"
   ],
-  "main": "dist/idoDesign.js",
+  "main": "dist/idodesign.js",
   "typings": "types/index.d.ts",
   "files": [
     "dist",

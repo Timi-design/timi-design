@@ -3,6 +3,9 @@
     [
       "@babel/preset-env",
       {
+        "loose": false,
+        "modules": "commonjs",
+        "spec": true,
         "targets": {
           "node": true,
           "browsers": [
