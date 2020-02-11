@@ -1,4 +1,5 @@
 import Icon from './icon'
+import locale from '../utils/locale/index';
 
 const idoDesign = {
   Icon
@@ -30,11 +31,11 @@ const API = {
   locale: locale.use,
   i18n: locale.i18n,
   install,
-  ...components
+  ...idoDesign
 };
 
 API.lang = (code) => {
-  const langObject = window['ido/locale'].default;
+  const langObject = window['idoDesign/locale'].default;
   if (code === langObject.i.locale) locale.use(langObject);
   else console.log(`The ${code} language pack is not loaded.`); // eslint-disable-line no-console
 };
