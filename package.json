@@ -1,7 +1,7 @@
 {
-  "name": "ido-components",
-  "version": "1.0.0",
-  "title": "idoAbc",
+  "name": "ido-design",
+  "version": "1.0.1",
+  "title": "idoDesign",
   "description": "A high quality UI components Library with Vue.js",
   "homepage": "http://www.maxiaoqu.com",
   "keywords": [
@@ -14,7 +14,7 @@
     "components",
     "ui"
   ],
-  "main": "dist/idoAbc.js",
+  "main": "dist/idoDesign.js",
   "typings": "types/index.d.ts",
   "files": [
     "dist",
@@ -27,17 +27,17 @@
     "build:minjs": "webpack --config ido-tools/build-minjs.js",
     "build:locale": "webpack --config  ido-tools/build-locale.js",
     "build:style": "gulp build --gulpfile ido-tools/build-style.js",
-    "build": "npm run build:js && npm run build:minjs && npm run build:locale && npm run build:style",
+    "build": "npm run build:style && npm run build:js && npm run build:minjs && npm run build:locale",
     "postinstall": "node utils/echo/postinstall || echo \"ignore\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ido-densign/ido-components"
+    "url": "https://github.com/ido-densign/ido-design"
   },
   "author": "maxiaoqu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ido-densign/ido-components/issues"
+    "url": "https://github.com/ido-densign/ido-design/issues"
   },
   "pre-commit": [
     "lint",

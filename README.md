@@ -1,2 +1,2 @@
-# ido-components
-ido-components
+# ido-design
+ido-design

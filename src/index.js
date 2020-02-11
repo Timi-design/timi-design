@@ -1,6 +1,6 @@
 import Icon from './icon'
 
-const idoComponents = {
+const idoDesign = {
   Icon
 };
 
@@ -9,8 +9,8 @@ const install = function (Vue, opts = {}) {
   locale.use(opts.locale);
   locale.i18n(opts.i18n);
 
-  Object.keys(idoComponents).forEach(key => {
-    Vue.component(key, idoComponents[key]);
+  Object.keys(idoDesign).forEach(key => {
+    Vue.component(key, idoDesign[key]);
   });
 
   Vue.prototype.$IDO = {

@@ -1,12 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const entry = require('./libs/locale');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 process.env.NODE_ENV = 'production';
 
 module.exports = {
-  mode : 'development',
   devtool: 'source-map',
   entry,
   module: {
