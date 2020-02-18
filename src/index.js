@@ -5,16 +5,21 @@ const components = {
   Icon
 };
 
+const idodesign = {
+  ...components,
+  idoIcon: Icon,
+};
+
 const install = function (Vue, opts = {}) {
   if (install.installed) return;
   locale.use(opts.locale);
   locale.i18n(opts.i18n);
 
-  Object.keys(components).forEach(key => {
-    Vue.component(key, components[key]);
+  Object.keys(idodesign).forEach(key => {
+    Vue.component(key, idodesign[key]);
   });
 
-  Vue.prototype.$IDO = {
+  Vue.prototype.$IDODESIGN = {
     size: opts.size || '',
     transfer: 'transfer' in opts ? opts.transfer : '',
     capture: 'capture' in opts ? opts.capture : true
