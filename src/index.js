@@ -1,13 +1,24 @@
-import Icon from './icon'
+import IdoIcon from './icon'
+
+import IdoLayout from './layout'
+import IdoHeader from './header';
+import IdoSider from './sider';
+import IdoContent from './content';
+import IdoFooter from './footer';
+
 import locale from '../utils/locale/index';
 
 const components = {
-  Icon
+  IdoIcon,
+  IdoLayout,
+  IdoHeader,
+  IdoSider,
+  IdoContent,
+  IdoFooter
 };
 
 const idodesign = {
-  ...components,
-  idoIcon: Icon,
+  ...components
 };
 
 const install = function (Vue, opts = {}) {
