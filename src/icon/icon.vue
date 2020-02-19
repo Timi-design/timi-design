@@ -5,7 +5,7 @@
 const prefixCls = 'ido-icon';
 
 export default {
-  name: 'Icon',
+  name: 'IdoIcon',
   props: {
     type: {
       type: String,
